@@ -1,0 +1,15 @@
+while True:
+    try:
+        i = int(input("Guess a number between 0-100: "))
+
+        if i < 0 or i > 100:
+            print("Invalid number! Please enter between 0-100.")
+
+        elif i == 15:
+            print("Congratulations! You guessed the correct number.")
+            break
+
+        else:
+            print("You guessed the wrong number. Try again.")
+    except ValueError:
+        print("Invalid input! please try again")
